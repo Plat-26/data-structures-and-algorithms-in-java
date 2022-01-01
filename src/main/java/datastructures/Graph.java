@@ -10,13 +10,13 @@ import java.util.Stack;
  * A graph is a collection of nodes and edges.
  * Nodes are data points on the graph while edges represents relationship between nodes.
  * <p>
- * A graph is said to be directed if there's an explicit path that can only be travelled between
+ * A graph is said to be directed if there's an explicit direction that can only be travelled between
  * two paths. The graph is undirected if movements between two nodes can be in any direction.
  * <p>
  * Weighted graphs are those that explicitly define the cost of travelling across an edge.
  * <p>
  * Programmatically, a graph can be represented by an adjacency matrix or an adjacency list.
- * The adjacency matrix is a 2 x 2 representation of the graph in the matrix[i][j] represents an
+ * The adjacency matrix is a 2 x 2 representation of the graph in which matrix[i][j] represents an
  * edge between nodes i and j. The value at this point can also be used to represent the weight of
  * that edge.
  * <p>
