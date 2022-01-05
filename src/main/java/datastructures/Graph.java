@@ -10,7 +10,7 @@ import java.util.Stack;
  * A graph is a collection of nodes and edges.
  * Nodes are data points on the graph while edges represents relationship between nodes.
  * <p>
- * A graph is said to be directed if there's an explicit direction that can only be travelled between
+ * A graph is said to be directed if there's an explicit direction that must be travelled between
  * two paths. The graph is undirected if movements between two nodes can be in any direction.
  * <p>
  * Weighted graphs are those that explicitly define the cost of travelling across an edge.

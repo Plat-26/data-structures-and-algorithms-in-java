@@ -2,7 +2,7 @@ package datastructures;
 
 /**
  * The nodes of a doubly linked list has nodes that contains reference to its previous and next
- * nodes
+ * nodes.
  */
 public class DoublyLinkedList<T> {
 

@@ -35,7 +35,7 @@ public class QueueWithArray<T> {
 
   public void enqueue(T element) {
     if (isFull()) {
-      System.out.println("Queue is full");
+      throw new IllegalStateException("Queue is full");
     }
     rear++;
     currentSize++;

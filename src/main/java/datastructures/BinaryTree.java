@@ -1,7 +1,5 @@
 package datastructures;
 
-import org.w3c.dom.Node;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -11,7 +9,7 @@ import java.util.Queue;
  * Trees provide a moderate insertion and search time O(log n) better then linked lists O(n) but
  * slower than arrays O(1)
  * <p>
- * Binary tree is a type of tree that only has no children: the left anf right nodes
+ * Binary tree is a type of tree that only has two children: the left and right nodes
  * <p>
  * A binary tree is said to be balanced if its height is O(Log n) where n is the number of nodes.
  * The time complexity for search, insert and delete is also O(log n).

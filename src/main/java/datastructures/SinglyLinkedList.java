@@ -18,12 +18,10 @@ public class SinglyLinkedList<T> {
     linkedList.head = node;
     linkedList.insertAtStart(6);
     linkedList.traverse();
-
   }
 
   /**
-   * To append to a linked list
-   *
+   * To append to a linked list.
    * @param element
    */
   public void insertAtEnd(T element) {
@@ -36,13 +34,11 @@ public class SinglyLinkedList<T> {
     while (curr.next != null) {
       curr = curr.next;
     }
-
     curr.next = newNode;
   }
 
   /**
-   * To insert at the start of a linked list
-   *
+   * To insert at the start of a linked list.
    * @param element
    */
   public void insertAtStart(T element) {
@@ -51,14 +47,12 @@ public class SinglyLinkedList<T> {
     if (this.head == null) {
       this.head = newNode;
     }
-
     newNode.next = head;
     head = newNode;
   }
 
   /**
-   * Insert at a specific node in the list
-   *
+   * Insert at a specific node in the list.
    * @param node
    */
   public void insertAtNode(Node<T> node, T element) {
@@ -78,14 +72,12 @@ public class SinglyLinkedList<T> {
   }
 
   /**
-   * To traverse the linked list and print all elements
+   * To traverse the linked list and print all elements.
    */
   public void traverse() {
     if (this.head == null) {
-      System.out.println("Linked list is empty");
-      return;
+      throw new IllegalStateException("Linked list is empty");
     }
-
     Node<T> curr = this.head;
     while (curr != null) {
       System.out.println(curr.value);

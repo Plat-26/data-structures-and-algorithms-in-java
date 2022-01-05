@@ -19,10 +19,10 @@ public class Trie {
     System.out.println(trie.search("word"));
   }
 
-    /**
-     * Inserts a new word into the trie
-     * @param word
-     */
+  /**
+   * Inserts a new word into the trie.
+   * @param word
+   */
   public void insert(String word) {
     Node curr = root;
     for (int i = 0; i < word.length(); i++) {
@@ -36,21 +36,21 @@ public class Trie {
     curr.isWord = true;
   }
 
-    /**
-     * Checks if given word is present in trie
-     * @param word
-     * @return
-     */
+  /**
+   * Checks if given word is present in trie.
+   * @param word
+   * @return
+   */
   public boolean search(String word) {
     Node node = this.getNode(word);
     return node != null && node.isWord;
   }
 
-    /**
-     * Checks if a given prefix is present in trie
-     * @param prefix
-     * @return
-     */
+  /**
+   * Checks if a given prefix is present in trie
+   * @param prefix
+   * @return
+   */
   public boolean isPrefix(String prefix) {
       return getNode(prefix) != null;
   }

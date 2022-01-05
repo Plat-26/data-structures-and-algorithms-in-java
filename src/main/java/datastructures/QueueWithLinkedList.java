@@ -35,7 +35,6 @@ public class QueueWithLinkedList<T> {
       this.front = this.rear = newNode;
       currentSize++;
     }
-
     this.rear.next = newNode;
     this.rear = newNode;
   }
@@ -49,10 +48,8 @@ public class QueueWithLinkedList<T> {
     if (this.front == null) {
       return null;
     }
-
     T element = this.front.value;
     this.front = this.front.next;
-
     //if front is null then change rear to null
     if (this.front == null) {
       this.rear = null;

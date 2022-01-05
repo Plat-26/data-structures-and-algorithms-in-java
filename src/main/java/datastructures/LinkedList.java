@@ -7,7 +7,7 @@ package datastructures;
  * Insertion and deletion from a linked list takes O(1) unlike with arrays that have O(n) for the
  * worst case.
  * <p>
- * Linked lists do not allow random access to its node. LinkedLists support dynamic size and can be
+ * Linked lists do not allow random access to its nodes. LinkedLists support dynamic size and can be
  * singly or doubly
  * <p>
  * A Singly linkedList has nodes that contain only a pointer to its next node A Doubly linked list

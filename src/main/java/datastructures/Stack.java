@@ -1,9 +1,5 @@
 package datastructures;
 
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * An abstract data structure that uses the Last In First Out (LIFO) approach to storing and
  * retrieving data.

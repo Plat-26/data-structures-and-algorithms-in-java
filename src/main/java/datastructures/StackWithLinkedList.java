@@ -12,8 +12,7 @@ public class StackWithLinkedList<T> {
 
   public void push(T element) {
     if (isFull()) {
-      System.out.println("Stack is full");
-      return;
+      throw new IllegalStateException("Stack is full");
     }
     Node<T> prevTop = topNode;
     topNode = new Node<T>(element);
