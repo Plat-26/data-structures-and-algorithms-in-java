@@ -8,8 +8,12 @@ package datastructures.api;
  */
 public interface Heap {
 
-  int poll();
 
+  /**
+   * Retrieves the element at the root
+   * Time: O(1)
+   * @return
+   */
   int peek();
 
   /**
@@ -31,7 +35,7 @@ public interface Heap {
    * Time complexity = O(log n).
    * @return
    */
-  int delete();
+  int poll();
 
   /**
    * Retrieves the min(or max for Max-Heap) value from the Min-Heap.

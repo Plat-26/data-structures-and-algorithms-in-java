@@ -1,5 +1,7 @@
 package datastructures.api;
 
+import org.w3c.dom.Node;
+
 public interface Tree<T> {
 
   /**
@@ -8,21 +10,21 @@ public interface Tree<T> {
    * @param element
    * @return
    */
-  T search(T element);
+  T contains(Node root, T element);
 
   /**
-   * Worst case Time: O(n)
+   * Worst case Time: O(n) however this also depends on the structure of the tree
    * Binary Search Tree - Average case Time: O(h) where h is the height of the tree.
    * @param element
    * @return
    */
-  void insert(T element);
+  void insert(Node root, T element);
 
   /**
-   * Worst case Time: O(n)
+   * Worst case Time: O(n) however this also depends on the structure of the tree
    * Binary Search Tree - Average case Time: O(h) where h is the height of the tree.
    * @param element
    * @return
    */
-  void delete(T element);
+  void delete(Node root, T element);
 }

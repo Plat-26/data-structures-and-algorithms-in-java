@@ -15,7 +15,7 @@ public interface Array<T> {
    * @param index
    * @param element
    */
-  void add(int index, T element);
+  void insert(int index, T element);
 
   /**
    * Retrieves the element at the given array index.

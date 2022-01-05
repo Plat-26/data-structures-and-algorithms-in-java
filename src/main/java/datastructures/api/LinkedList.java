@@ -3,7 +3,7 @@ package datastructures.api;
 public interface LinkedList<T> {
 
   /**
-   * Appends a new element to the end of the list in constant O(1) time and O(1) space
+   * Appends a new element to the end of the list in O(n) time and O(1) space
    *
    * @param element
    */

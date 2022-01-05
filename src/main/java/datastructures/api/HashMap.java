@@ -3,15 +3,17 @@ package datastructures.api;
 public interface HashMap<K, V> {
 
   /**
-   * Time: O(1)
+   * Average Time: O(1)
+   * Worst Time: O(n)
    * @param key
    * @param value
    */
   void put(K key, V value);
 
   /**
-   * Time: O(1)
+   * Average Time: O(1)
+   * Worst Time: O(n)
    * @param key
    */
-  void get(K key);
+  V get(K key);
 }
