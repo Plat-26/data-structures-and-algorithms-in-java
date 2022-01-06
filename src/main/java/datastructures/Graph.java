@@ -11,7 +11,7 @@ import java.util.Stack;
  * Nodes are data points on the graph while edges represents relationship between nodes.
  * <p>
  * A graph is said to be directed if there's an explicit direction that must be travelled between
- * two paths. The graph is undirected if movements between two nodes can be in any direction.
+ * two paths/nodes. The graph is undirected if movements between two nodes can be in any direction.
  * <p>
  * Weighted graphs are those that explicitly define the cost of travelling across an edge.
  * <p>
@@ -37,10 +37,9 @@ public class Graph {
 
       //get all neighbours
       List<Node> adjacents = curr.adjacent;
-      for(int i = 0; i < adjacents.size(); i++) {
-        Node adj = adjacents.get(i);
-        if(adj != null && !adj.visited) {
-          stack.push(adjacents.get(i));
+      for (Node adj : adjacents) {
+        if (adj != null && !adj.visited) {
+          stack.push(adj);
         }
       }
       curr.visited = true;
@@ -56,9 +55,8 @@ public class Graph {
       System.out.println(curr.id);
 
       List<Node> adjacents = curr.adjacent;
-      for(int i = 0; i < adjacents.size(); i++) {
-        Node adj = adjacents.get(i);
-        if(adj != null && !adj.visited) {
+      for (Node adj : adjacents) {
+        if (adj != null && !adj.visited) {
           queue.add(adj);
         }
       }
