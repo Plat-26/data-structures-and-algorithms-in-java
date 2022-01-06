@@ -1,5 +1,10 @@
 package datastructures;
 
+/**
+ * To implement a queue with a linked list, add new elements to the end and
+ * remove elements from the head.
+ * @param <T>
+ */
 public class QueueWithLinkedList<T> {
 
   private Node<T> front;
