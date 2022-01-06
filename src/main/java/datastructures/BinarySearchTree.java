@@ -1,9 +1,12 @@
 package datastructures;
 
 /**
+ * A balanced binary search tree is sorted such that the left child has a value less than the parent
+ * while the right child has a value greater than its parent. This is recursively true of all nodes
+ * in the tree.
+ *
  * The time complexity of insert and remove in a standard BST is O(n) while insert and remove in a
  * balanced binary search tree is O(log n).
- *
  */
 public class BinarySearchTree {
 
