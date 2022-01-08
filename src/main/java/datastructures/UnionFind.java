@@ -20,8 +20,8 @@ public class UnionFind {
   /**
    * To illustrate the union find data structure, the method counts the number of connected
    * components in a graph given the number of nodes, n and the list of edges.
-   * @param n
-   * @param edges
+   * @param n number of nodes
+   * @param edges list of edges
    * @return
    */
   private int countConnectedComponents(int n, int[][] edges) {

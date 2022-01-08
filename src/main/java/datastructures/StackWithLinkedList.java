@@ -1,5 +1,10 @@
 package datastructures;
 
+/**
+ * To implement a stack with a linked list, push at the top and pop at the top.
+ * Only keep track of the head node.
+ * @param <T>
+ */
 public class StackWithLinkedList<T> {
 
   private Node<T> topNode;

@@ -5,7 +5,7 @@ package datastructures;
  * M is the length of the word.
  * <p>
  * In a trie every node represents a character and can have as children nodes characters that make
- * up the same prefix.
+ * up the same prefix. The root node of a trie should not contain any element.
  * <p>
  * Java does not have a default implementation of a trie.
  */
