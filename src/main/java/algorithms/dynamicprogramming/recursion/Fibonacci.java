@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.dynamicprogramming.recursion;
 
 import java.util.HashMap;
 
