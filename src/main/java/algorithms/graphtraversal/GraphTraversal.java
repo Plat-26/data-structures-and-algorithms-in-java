@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.graphtraversal;
 
 import java.util.ArrayList;
 import java.util.HashSet;
