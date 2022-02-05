@@ -1,4 +1,4 @@
-package algorithms.graphtraversal;
+package algorithms.graphtraversal.trees;
 
 import java.util.Stack;
 
