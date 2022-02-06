@@ -6,10 +6,13 @@ import java.util.Queue;
 /**
  * Trees are a hierarchical data structure consisting of a single parent node and its children.
  * <p>
- * Trees provide a moderate insertion and search time O(log n) better then linked lists O(n) but
+ * Trees provide a moderate insertion and search time O(log n) better than linked lists O(n) but
  * slower than arrays O(1)
  * <p>
- * Binary tree is a type of tree that only has two children: the left and right nodes
+ * Binary tree is a type of tree that has at most two children.
+ * An empty tree and a tree with single node are also considered binary trees.
+ * A binary tree has only one root and there's only one path from the root to any node
+ * Binary trees do not con
  * <p>
  * A binary tree is said to be balanced if its height is O(Log n) where n is the number of nodes.
  * The time complexity for search, insert and delete is also O(log n).
