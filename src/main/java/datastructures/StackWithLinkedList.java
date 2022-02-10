@@ -8,22 +8,19 @@ package datastructures;
 public class StackWithLinkedList<T> {
 
   private Node<T> topNode;
-  private int size;
 
-  public StackWithLinkedList(int size) {
+  public StackWithLinkedList() {
     this.topNode = null;
-    this.size = size;
   }
 
   public void push(T element) {
-    if (isFull()) {
-      throw new IllegalStateException("Stack is full");
+    if (topNode == null) {
+      topNode = new Node<>(element);
+      return;
     }
     Node<T> prevTop = topNode;
     topNode = new Node<T>(element);
     topNode.next = prevTop;
-    size--;
-
     System.out.println("Element added to stack");
   }
 
@@ -31,7 +28,6 @@ public class StackWithLinkedList<T> {
     if (!isEmpty()) {
       T poppedElement = topNode.value;
       topNode = topNode.next;
-      size--;
 
       return poppedElement;
     }
@@ -39,9 +35,6 @@ public class StackWithLinkedList<T> {
     return null;
   }
 
-  private boolean isFull() {
-    return size == 0;
-  }
 
   private boolean isEmpty() {
     return topNode == null;
