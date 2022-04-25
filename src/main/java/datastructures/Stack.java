@@ -21,7 +21,7 @@ package datastructures;
 public class Stack {
 
   public static void main(String[] args) {
-    StackWithLinkedList<Integer> stack = new StackWithLinkedList<Integer>(3);
+    StackWithLinkedList<Integer> stack = new StackWithLinkedList<Integer>();
     stack.push(5);
     stack.push(4);
     stack.push(3);

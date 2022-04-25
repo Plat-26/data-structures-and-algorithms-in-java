@@ -34,7 +34,7 @@ public class LargestComponent {
 
     //loop through every node in the graph
     for (int node : graph.keySet()) {
-      //traverse nodes not present in visited and retrun connected component count
+      //traverse nodes not present in visited and return connected component count
       if (!visited.contains(node)) {
         int componentCount = traverseAndCount(graph, node, visited);
         //compare largest with newly returned

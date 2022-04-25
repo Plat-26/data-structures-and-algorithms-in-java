@@ -8,13 +8,26 @@ public class DoublyLinkedList<T> {
 
   private Node<T> head;
 
+  public static void main(String[] args) {
+    DoublyLinkedList<Integer> ll = new DoublyLinkedList<>();
+    ll.insertAtStart(1);
+    ll.insertAtStart(2);
+    ll.insertAtStart(3);
+    ll.insertAtEnd(0);
+    ll.insertAtNode(ll.head, 5);
+    ll.print();
+
+  }
+
   public void insertAtStart(T element) {
     Node<T> newNode = new Node<>(element);
 
     if (this.head == null) {
       this.head = newNode;
+      return;
     }
 
+    newNode.next = head;
     head.prev = newNode;
     this.head = newNode;
   }
@@ -49,6 +62,18 @@ public class DoublyLinkedList<T> {
         temp.prev = newNode;
         newNode.next = temp;
       }
+      curr = curr.next;
+    }
+  }
+
+  private void print() {
+    if (head == null) {
+      throw new IllegalStateException("List is empty");
+    }
+
+    Node<T> curr = head;
+    while (curr != null) {
+      System.out.println(curr.value);
       curr = curr.next;
     }
   }

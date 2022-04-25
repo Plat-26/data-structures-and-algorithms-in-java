@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.Stack;
 
 /**
- * Breath first search and depth first search can be used to traverse through a graph
+ * Breath first search and depth first search can be used to traverse a graph
  * <p>
  * The time complexity of BFS and DFS for a graph is O(V + E)
  * where V is the number of vertices or nodes and E is the number of edges.
